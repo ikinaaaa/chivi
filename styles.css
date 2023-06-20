@@ -103,7 +103,6 @@ footer p, .madeby {
 
     header{
         height: 2.5%;
-        background-color: palevioletred;
     }
     .pc{
         display: none;
@@ -116,7 +115,7 @@ footer p, .madeby {
         justify-content:center;
         align-items: center;
         gap: 30%;
-        background-color: aqua;
+
     }
     
     .logo{
@@ -142,7 +141,7 @@ footer p, .madeby {
         display: none;
         justify-content: center;
         align-items: center;
-        background-color: blueviolet;
+
     }
     .nav-socials-container{
         display: flex;
@@ -170,7 +169,6 @@ footer p, .madeby {
         justify-content: center;
         align-items: center;
         gap: 20%;
-        background-color: antiquewhite;
     }
     .social{
         height: 100%;
@@ -192,7 +190,6 @@ footer p, .madeby {
         flex-direction: column;
         justify-content: space-around;
         height: 15.86%;
-        background-color: aquamarine;
     }
     .intro-container {
         display: flex;
