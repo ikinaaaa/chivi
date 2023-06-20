@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Rye';
-    src: url(fonts/ChunkFive-Regular.otf);
+    src: url(fonts/BukhariScript-Regular.otf);
 
 
 }
@@ -10,13 +10,14 @@ html{
 * {
     margin: 0px;
     padding: 0px;
-color: black;
+color: #F1EDDA;
 font-family: 'Rye';
 }
 
 body {
     background-size:cover;
-    background-color: #e6ddd4;
+    background-color: #6F6B76
+    ;
 }
 
 
@@ -37,7 +38,7 @@ body {
 
 
 h1{
-    color: black;
+    color: #F1EDDA;
     font-size: 300%;
     font-family:'Rye';
     height: 15%;
@@ -54,7 +55,7 @@ h1{
     border-radius: 50px;
     background-color: transparent;
     font-family: 'Rye';
-    border: 2px solid black ;
+    border: 2px solid #F1EDDA ;
     font-size: 100%;
 }
 .button1 a {
@@ -81,7 +82,7 @@ h1{
     border-radius: 50px;
     background-color: transparent;
     font-family: 'Rye';
-    border: 2px solid black ;
+    border: 2px solid #F1EDDA ;
     font-size: 100%; 
 }
 .button2 a {
@@ -95,32 +96,32 @@ footer p, .madeby {
 
 
 @media only screen and (max-width: 1000px){
-    html{
-        height: 5050px;
-    }
-   
    
     body {
         height: 5050px;
     }
 
     header{
-        height: 1.96%;
-        
+        height: 2.5%;
+        background-color: palevioletred;
+    }
+    .pc{
+        display: none;
     }
     
-    .nav-big-container{
-        height: 100%;
+    .mobile-nav-big-container{
+        height: 70%;
         display: flex;
-        flex-direction: column;
-        justify-content: center  ;
+        flex-direction: row;
+        justify-content:center;
         align-items: center;
-        gap: 25%;
+        gap: 30%;
+        background-color: aqua;
     }
     
     .logo{
-        height: 95%;
-        width: 13%;
+        height: 90%;
+        width: 27%;
         align-items: center;
     }
     .logoo{
@@ -128,11 +129,27 @@ footer p, .madeby {
         width: 100%;
     }
     
+    .mobile-navbtn-container{
+        height: 60%;
+        width: 15%;
+    }
+    .mobile-navbtn{
+        height: 100%;
+        width: 100%;
+    }
+    .navigation{
+        height: 3%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+    }
     .nav-socials-container{
         display: flex;
         flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      text-align: center;
         width: 50%;
     }
     .nav{
@@ -147,39 +164,39 @@ footer p, .madeby {
    
     .socials{
         height: 100%;
-        width: 15%;
+        width: 20%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 20%;
+        background-color: antiquewhite;
     }
-    .tgg{
+    .social{
         height: 100%;
         width: 25%;
     }
-    .tww{
-        height: 100%;
-        width: 25%;
-    }
-    .tg {
+    .socialpicture {
         height: 100%;
         width: 100%;
     }
-    .tw{
-        height: 100%;
-        width: 100%;
-    }
+    
     .navbtn-container{
          display: none;
     }
+    .nav-big-container{
+        display: none;
+    }
     .intro {
         display:flex;
+        flex-direction: column;
         justify-content: space-around;
         height: 15.86%;
+        background-color: aquamarine;
     }
     .intro-container {
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
@@ -188,7 +205,7 @@ footer p, .madeby {
     .intro-text {
         display:flex;
         flex-direction: column;
-       text-align: left;
+       text-align: center;
        height:80%;
        width: 40%;
        justify-content: center;
@@ -569,7 +586,12 @@ footer p, .madeby {
         height: 1.96%;
         
     }
-    
+    .mobile{
+        display: none;
+    }
+    .mobile-nav-big-container{
+        display: none;
+    }
     .nav-big-container{
         height: 100%;
         display: flex;
@@ -579,7 +601,7 @@ footer p, .madeby {
     }
     
     .logo{
-        height: 95%;
+        height: 100%;
         width: 13%;
         align-items: center;
     }
@@ -612,23 +634,18 @@ footer p, .madeby {
         align-items: center;
         gap: 20%;
     }
-    .tgg{
+    .social{
         height: 100%;
         width: 25%;
     }
-    .tww{
-        height: 100%;
-        width: 25%;
-    }
-    .tg {
+    .socialpicture {
         height: 100%;
         width: 100%;
     }
-    .tw{
-        height: 100%;
-        width: 100%;
-    }
-    .navbtn-container{
+.navigation{
+    display: none;
+}
+    .mobile-navbtn-container{
          display: none;
     }
     .intro {
@@ -646,7 +663,7 @@ footer p, .madeby {
     .intro-text {
         display:flex;
         flex-direction: column;
-       text-align: left;
+       text-align: center;
        height:80%;
        width: 40%;
        justify-content: center;
