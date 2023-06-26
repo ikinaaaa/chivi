@@ -1,834 +1,461 @@
 @font-face {
-    font-family: 'Rye';
+    font-family: 'Bukhari';
     src: url(fonts/BukhariScript-Regular.otf);
-
-
 }
-html{
-    height: 5050px;
-}
-* {
-    margin: 0px;
+.container{
+    font-family: 'Bukhari';
     padding: 0px;
-color: #F1EDDA;
-font-family: 'Rye';
+    margin: 0px;
+    display: grid;
+    height: 5050px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 0.875fr 0.125fr 0.25fr 0.875fr 0.25fr 3fr 1.5fr 1.5fr;
+    grid-template-areas: 
+    "nav nav"
+    "intro1 intro2"
+    "contract contract"
+    "division1 division1"
+    "about about"
+    "division2 division2"
+    "roadmap roadmap"
+    "tokenomics tokenomics"
+    "footer footer";
+    background-color: #D5C5C8;
+
 }
-
-body {
-    background-size:cover;
-    background-color: #6F6B76;
+nav{
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
 }
-
-
-.nav a {
-    font-family: 'Rye';
-    height: fit-content;
-    width: fit-content;
-    font-size: 120%;
-    text-decoration: none;
+.logo{
+    width: 28%;
+    height: 90%;
 }
-
-.nav a:hover {
-   text-decoration: underline;
+.logo-img{
+    width: 100%;
+    height: 90%;
 }
-.button1 a:hover {
-    text-decoration: underline;
- }
-
-
-h1{
-    color: #F1EDDA;
-    font-size: 300%;
-    font-family:'Rye';
-    height: 15%;
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 60%;
 }
- .intro-text p {
-    background-color: transparent;
-    font-size: 150%;
-    height: 20%;
-    font-weight: 400;
- }
-.button1{
-    height: 8%;
+.menubar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    width: 80%;
+}
+.menubar-item1{
     width: 15%;
-    border-radius: 50px;
-    background-color: transparent;
-    font-family: 'Rye';
-    border: 2px solid #F1EDDA ;
-    font-size: 100%;
+    height: 70%;
 }
-.button1 a {
-    text-decoration: none;
-}
-
-.contract p{
-    height: fit-content;
-    font-size: 120%;
-    align-items: start;
-    font-family:'Rye';
-    font-weight: 300;
-
-}
-
- h2 {
-    font-size: 500%;
-    font-family: 'Rye';
-    text-align: center ;
- }
-.button2{
-    height: 30%;
+.menubar-item2{
     width: 20%;
-    border-radius: 50px;
-    background-color: transparent;
-    font-family: 'Rye';
-    border: 2px solid #F1EDDA ;
-    font-size: 100%; 
+    height: 70%;
 }
-.button2 a {
-    text-decoration: none;
+.menubar-item3{
+    width: 25%;
+    height: 70%;
 }
-
-footer p, .madeby {
-    width: fit-content;
+.menubar-item4{
+    width: 20%;
+    height: 70%;
+}
+.item1-img{
+    width: 90%;
+    height: 80%;
+}
+.item2-img{
+    width: 100%;
     height: 100%;
 }
+.item3-img{
+    width: 100%;
+    height: 90%;
+}
+.item4-img{
+    width: 60%;
+    height: 85%;
+}
+.nav-buybtn{
+    width: 15%;
+    height: 45%;
 
-
-@media only screen and (max-width: 1000px){
-   
-    body {
-        height: 5050px;
-    }
-
-    header{
-        height: 2.5%;
-    }
-    .pc{
-        display: none;
-    }
-    
-    .mobile-nav-big-container{
-        height: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
-        align-items: center;
-        gap: 30%;
-    }
-    
-    .logo{
-        height: 100%;
-        width: 27%;
-        align-items: center;
-    }
-    .logoo{
-        height: 100%;
-        width: 100%;
-    }
-    
-    .mobile-navbtn-container{
-        height: 60%;
-        width: 15%;
-    }
-    .mobile-navbtn{
-        height: 100%;
-        width: 100%;
-    }
-    .navigation{
-        height: 3%;
-        display: none;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .nav-socials-container{
-        display: flex;
-        flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-        width: 50%;
-    }
-    .nav{
-        height: 150%;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10%;
-    }
-   
-    .socials{
-        height: 100%;
-        width: 20%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20%;
-    }
-    .social{
-        height: 100%;
-        width: 25%;
-    }
-    .socialpicture {
-        height: 100%;
-        width: 100%;
-    }
-    
-    .navbtn-container{
-         display: none;
-    }
-    .nav-big-container{
-        display: none;
-    }
-    .intro {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 15.86%;
-    
-    }
-    .intro-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    .intro-text {
-        display:flex;
-        flex-direction: column;
-       text-align: center;
-       height:80%;
-       width: 60%;
-       justify-content: center;
-    }
-
-    
-    .intro-photo{
-        background-image: url(images/chihui-logo.png);
-        background-size: 90% ;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        text-indent: -100000000000000%;
-        width: 60%;
-        height: 80%;
-    }
-    
-    
-    .contract{
-        height: 4.35%;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 22.84%;
-        gap: 10%;
-      }
-    
-     .about-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 90%;
-        width: 100%;
-    }
-    .about-text {
-        background-image: url(images/chihui-abouttext.png);
-        background-size: 100% ;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        text-indent: -100000000000000%;
-       height:100%;
-       width: 60%;
-       justify-content: center;
-    }
-
-    
-    .about-photo{
-        background-image: url(images/chihui-photo.png);
-        background-size: 100% ;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        text-indent: -100000000000000%;
-        width: 60%;
-        height: 100%;
-    }
-
-    
-    .roadmap {
-        height: 20.68%;
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-       gap: 5%;
-    }
-    .map{
-        width: 100%;
-        height: 100%;
-        background-image: url(images/chihui-roadmap.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    
-    .tokenomics{
-        height: 19.8%;
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-       gap: 10%;  
-    }
-    .tokenomics-img{
-        width:70%;
-        height: 60%;
-        background-image: url(images/chihui-tokenomics.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 50% ;
-    
-    }
-    
-    .join{
-        height: 5.94%;
-    
-    }
-    .joinus{
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .footer{
-        height: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-    }
-   
-    .footer-text{
-        width: 20%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .madeby{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .tgg2{
-        width: 10%;
-    }
-    .tg2{
-        width: 65%;
-        height: 80%;
-    
-    }
-/* 
-    body {
-        height: 100%;
-    }
-    header{
-        height: 3.96%;
-        
-    }
-    .nav-big-container{
-        height: 35%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: aquamarine;
-        
-    }
-  
-    .logo{
-        height: 90%;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        background-color: palevioletred;
-    }
-    .logoo{
-       height: 100%;
-       width: 100%;
-    }
-    .navbtn-container{
-        width: 20%;
-        height: 90%;
-        background-color: peru;
-        display: block;
-    }
-    .navbtn{
-        width: 100%;
-        height: 100%;
-    }
-.mobilenav-container{
-    display: none;
+}
+.nav-buybtn-img{
+    width: 100%;
+    height: 100%;
+}
+#intro1{
+    margin-left: 20%;
+    margin-top: 10%;
+    grid-area: intro1;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5%;
 }
-
-.mobilenav-box{
-    width: 100%;
-    text-align: center;
+.intro-text{
+width: 90%;
+height: 50%;
+background-image: url(images/intro-text.png);
+background-size: 100%;
+background-repeat: no-repeat;
 }
-
-    .nav{
-        display: none;
-    }
-    .socials{
-        display: none;
-    }
-    /* 
-    .nav{
-        height: 100%;
-        width: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10%;
-    }
-    .socials{
-        height: 66%;
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20%;
-    }
-    .tgg{
-        height: 50%;
-        width: 17%;
-    }
-    .tww{
-        height: 55%;
-        width: 17%;
-    }
-    .tg {
-        height: 100%;
-        width: 100%;
-    }
-    .tw{
-        height: 100%;
-        width: 100%;
-    }
-    
-    
-    .nav a:hover {
-       text-decoration: underline;
-    }
-    .button1 a:hover {
-        text-decoration: underline;
-     }
-    */
-    
-    
-    
-    
-    
-    
-    
-    
-    /*
-    .intro {
-        height: 12.86%;
-
-    }
-    .intro-container {
+.intro-buttons{
+    width: 90%;
+    height: 40%;
+}
+.intro-buttons-container{
     display: flex;
     flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-    .intro-text {
-
-       height:50%;
-       width: 90%;
- 
-    
-    }
-   
-    .intro-photo{
-        background-image: url(images/chapito-withbg.png);
-        background-size: 100% ;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        text-indent: -100000000000000%;
-        width: 80%;
-        height: 50%;
-    }
-    
-    
-    .contract{
-        height: 1.35%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-   
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 7.84%;
-        gap: 5%;
-        width: 90%;
-      }
-    
-    
-     .about-container{
-        height: 60%;
-        width: 60%;
-     }
-    .book{
-        height: 100%;
-        width: 100%;
-    }
-    
-    .roadmap {
-        height: 11.68%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-    }
-    .map{
-        width: 100%;
-        height: 100%;
-        background-size: 100%;
-    }
-    
-    .tokenomics{
-        height: 5.8%;
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-       gap: 10%;  
-    }
-    .tokenomics-img{
-        width:90%;
-        height: 60%;
-        background-size: 100%;
-        background-position: 50% ;
-    
-    }
-    
-    .join{
-        height: 3.94%;
-    }
-    .joinus{
-        height: 70%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .join button{
-        height: 50%;
-        width: 50%;
-        border:  solid black;
-        border-radius: 50;
-        background-color: transparent;
-        font-family: 'Rye';
-        font-size: 100%;
-        padding: 0.5% 1%;
-    }
-    .pc-footer{
-        display: none;
-    }
-    .mobile-footer {
-        height: 2.96%;
-        background-color: blueviolet;
-    }
-    */
+    height: 70%;
+    width: 50%;
+    gap: 10%;
+}
+.intro-buybtn{
+    height: 30%;
+    width: 100%;  
+}
+.intro-buybtn-img{
+    height: 100%;
+    width: 40%;
+}
+.intro-jointgbtn{
+    height: 35%;
+    width: 100%;
+}
+.intro-jointgbtn-img{
+    height: 100%;
+    width: 50%;
+}
+#intro2{
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    margin-top: 5%;
+    grid-area: intro2;  
+    display: flex;
+}
+.intro-photo{
+    width: 70%;
+    height: 90%;
+    justify-content: center;
+}
+.intro-photo-img{
+    width: 100%;
+    height: 100%;
+}
+#contract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: contract;
+}
+.contract-container{
+    width: 20%;
+    height: 60%;
+}
+.contract-img{
+    width: 100%;
+    height: 100%;
+}
+#division1{
+    display: flex;
+    align-items: center;
+    grid-area: division1;
+}
+.division-container{
+    width: 100%;
+    height: 40%;
+}
+.division-img{
+width: 100%;
+height: 100%;
 }
 
-
-@media only screen and (min-width: 1000px ){
-    html{
-        height: 5050px;
-    }
-   
-   
-    body {
-        height: 5050px;
-    }
-
-    header{
-        height: 1.96%;
-        
-    }
-    .mobile{
-        display: none;
-    }
-    .mobile-nav-big-container{
-        display: none;
-    }
-    .nav-big-container{
-        height: 100%;
-        display: flex;
-        justify-content: center  ;
-        align-items: center;
-        gap: 25%;
-    }
-    
-    .logo{
-        height: 100%;
-        width: 13%;
-        align-items: center;
-    }
-    .logoo{
-        height: 100%;
-        width: 100%;
-    }
-    
-    .nav-socials-container{
-        display: flex;
-        flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-        width: 50%;
-    }
-    .nav{
-        height: 150%;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10%;
-    }
-   
-    .socials{
-        height: 100%;
-        width: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20%;
-    }
-    .social{
-        height: 100%;
-        width: 25%;
-    }
-    .socialpicture {
-        height: 100%;
-        width: 100%;
-    }
-.navigation{
-    display: none;
+#about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: about;
 }
-    .mobile-navbtn-container{
-         display: none;
-    }
-    .intro {
-        display:flex;
-        justify-content: space-around;
-        height: 15.86%;
-    }
-    .intro-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    .intro-text {
-        display:flex;
-        flex-direction: column;
-       text-align: center;
-       height:80%;
-       width: 40%;
-       justify-content: center;
-    }
+.aboutphoto-container{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+.aboutphoto-img{
+    width: 60%;
+    height: 100%;
+}
+.abouttext-btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 90%;
 
-    
-    .intro-photo{
-        background-image: url(images/chihui-logo.png);
-        background-size: 100% ;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        text-indent: -100000000000000%;
-        width: 40%;
-        height: 80%;
-    }
-    
-    
-    .contract{
-        height: 4.35%;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 22.84%;
-        gap: 10%;
-      }
-    
-     .about-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 60%;
-        width: 100%;
-    }
-    .about-text {
-        background-image: url(images/chihui-abouttext.png);
-        background-size: 100% ;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        text-indent: -100000000000000%;
-       height:100%;
-       width: 40%;
-       justify-content: center;
-    }
-
-    
-    .about-photo{
-        background-image: url(images/chihui-photo.png);
-        background-size: 100% ;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        text-indent: -100000000000000%;
-        width: 40%;
-        height: 100%;
-    }
-    .book{
-        height: 100%;
-        width: 100%;
-    }
-    
-    .roadmap {
-        height: 31.68%;
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-       gap: 5%;
-    }
-    .map{
-        width: 80%;
-        height: 90%;
-        background-image: url(images/chihui-roadmap.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    
-    .tokenomics{
-        height: 19.8%;
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-       gap: 10%;  
-    }
-    .tokenomics-img{
-        width:70%;
-        height: 60%;
-        background-image: url(images/chihui-tokenomics.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 50% ;
-    
-    }
-    
-    .join{
-        height: 5.94%;
-    
-    }
-    .joinus{
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .footer{
-        height: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-    }
-   
-    .footer-text{
-        width: 20%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .madeby{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .tgg2{
-        width: 10%;
-    }
-    .tg2{
-        width: 65%;
-        height: 80%;
-    
-    }
+}
+.abouttext-container{
+    width: 100%;
+    height: 100%;  
+}
+.abouttext-img{
+    width: 100%;
+    height: 100%;   
+}
+.aboutbtn-container{
+    width: 10%;
+    height: 7%;
+    gap: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aboutbtn{
+    width: 50%;
+    height: 90%; 
+}
+.aboutleftbtn-img{
+    width: 100%;
+    height: 100%; 
+}
+.aboutrightbtn-img{
+    width: 100%;
+    height: 100%; 
+}
+#division2{
+    display: flex;
+    align-items: center;
+    grid-area: division2;
+}
+#roadmap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: roadmap;
+}
+.roadmap-container{
+    width: 80%;
+    height: 100%;
+}
+.roadmap-img{
+    width: 100%;
+    height: 100%;
+}
+#tokenomics{
+    grid-area: tokenomics;
+}
+.tokenomics-container{
+    width: 100%;
+    height: 80%;   
+    gap: 5%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tokenomics-title-container{
+    width: 30%;
+    height: 20%;
+}   
+.tokenomics-title-img{
+    width: 100%;
+    height: 90%;
+}
+.tokenomics-items-container{
+    width: 90%;
+    height: 75%;
+    gap: 5%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+.t-item1, .t-item2, .t-item3, .t-item4, .t-item5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+.t-planet1, .t-planet2, .t-planet3, .t-planet4, .t-planet5{
+}
+.t-subtitle1, .t-subtitle2, .t-subtitle3, .t-subtitle4, .t-subtitle5{
+}
+.t-item1{
+    width: 11%;
+}
+.t-planet1{
+    width: 100%;
+    height: 25%;
+}
+.planet1-img{
+    width: 100%;
+    height: 100%;
+}
+.t-subtitle1{
+    width: 45%;
+    height: 7%;
+}
+.subtitle1-img{
+    width: 100%;
+    height: 100%;
+}
+.t-item2{
+    width: 20%;
+}
+.t-planet2{
+    width: 85%;
+    height: 40%;
+}
+.planet2-img{
+    width: 100%;
+    height: 100%;
+}
+.t-subtitle2{
+    width: 90%;
+    height: 10%;
+}
+.subtitle2-img{
+    width: 100%;
+    height: 100%;
+}
+.t-item3{
+    width: 20%;
+}
+.t-planet3{
+    width: 100%;
+    height: 45%;
+}
+.planet3-img{
+    width: 100%;
+    height: 100%;
+}
+.t-subtitle3{
+    width: 90%;
+    height: 20%;
+}
+.subtitle3-img{
+    width: 100%;
+    height: 100%;
+}
+.t-item4{
+    width: 14.5%;
+}
+.t-planet4{
+    width: 75%;
+    height: 25%;
+}
+.planet4-img{
+    width: 100%;
+    height: 100%;
+}
+.t-subtitle4{
+    width: 100%;
+    height: 8%;
+}
+.subtitle4-img{
+    width: 100%;
+    height: 100%;
+}
+.t-item5{
+    width: 34.5%;
+}
+.t-planet5{
+    width: 100%;
+    height: 80%;
+}
+.planet5-img{
+    width: 100%;
+    height: 100%;
+}
+.t-subtitle5{
+    width: 50%;
+    height: 15%;
+}
+.subtitle5-img{
+    width: 100%;
+    height: 100%;
 }
 
-@media only screen and (min-width: 1500px ){
-    html, body{
-        height: 6000px;
-    }
-    .nav{
-        height: 150%;
-    }
-    .intro{
-        height:15.86
-    }
-    .contract{
-        height:4.35
-    }
-    .about{
-        height:15.84
-    }
-    .roadmap{
-        height:33.68
-    }
-    .tokenomics{
-        height:19.8
-    }
-    .joinus{
-        height:5.94;
-      
-    }
-    .footer{
-        height:1.96;
-    }
+#footer{
+    grid-area: footer;
+background-color: purple;
+}
 
+@media only screen and (max-width:1000px){ 
+.container{
+    display: grid;
+    height: 3036px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.875fr 0.125fr 1fr 0.25fr 1fr 1fr 0.25fr 2fr 1fr 0.5fr;
+    grid-template-areas: 
+    "nav"
+    "intro1"
+    "contract" 
+    "intro2"
+    "division1" 
+    "about1" 
+    "about2"
+    "division2"
+    "roadmap"
+    "tokenomics"
+    "footer"
+    ;
+
+}
+nav{
+    grid-area: nav;
+background-color: palegoldenrod;
+}
+#intro1{
+    grid-area: intro1;
+background-color: paleturquoise;
+}
+#intro2{
+    grid-area: intro2;
+background-color: palevioletred;
+}
+#division1{
+    grid-area: division1;
+background-color: peachpuff;
+}
+#about1{
+    grid-area: about1;
+background-color: peru;
+}
+#about2{
+    grid-area: about2;
+background-color: pink;
+}
+#division2{
+    grid-area: division2;
+background-color: plum;
+}
+#roadmap{
+    grid-area: roadmap;
+background-color:powderblue ;
+}
+#tokenomics{
+    grid-area: tokenomics;
+background-color: blueviolet;
+}
+#footer{
+    grid-area: footer;
+background-color: purple;
+}
 }
